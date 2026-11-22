@@ -3,46 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One rewriter, inside every app | Swagat Baghel</title>
-<meta name="description" content="One rewriter, inside every app: A Flutter app that rewrites text inline in any Android app with the user's own Gemini key, without giving up Gboard. A case study by Swagat Baghel, IIT BHILAI.">
 <link rel="icon" href="https://avatars.githubusercontent.com/u/153976113?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
+<title>ToneShift | Swagat Baghel</title>
+<meta name="description" content="ToneShift: Android app. A project by Swagat Baghel, IIT BHILAI.">
 </head>
-<body class="casepage">
-<div id="progress"></div>
-<div id="lamp" title="pull to switch"><div class="cord"></div><div class="shade">&#128161;</div><div class="lbl">pull to switch</div></div>
-<div class="casewrap">
-<aside class="sidenav">
-<a class="back sweep" href="/#work">&#8592; Back</a>
-<div style="font-family:'Pixelify Sans',monospace;font-size:12.5px;letter-spacing:1.5px;opacity:.55;margin-bottom:8px">ON THIS PAGE</div>
-<a href='#tldr'>TL;DR</a><a href='#context'>Context</a><a href='#built'>What was built</a><a href='#shows'>What it shows</a><a href='#links'>Links</a>
-</aside>
+<body>
+<div class="wrap">
+<nav class="mainnav reveal-load" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="/">home</a></li><li><a class="sweep" href="/about.html">about</a></li><li><a class="sweep" href="/#work">work</a></li><li><a class="sweep" href="/playground.html">playground</a></li></ul></nav>
 <main>
-<p class="kicker reveal-load" style="--d:.05s">ANDROID APP &#183; FLUTTER + KOTLIN</p>
-<h1 class="reveal-load" style="--d:.12s">One rewriter, inside every app</h1>
-<p class="sub reveal-load" style="--d:.2s">A Flutter app that rewrites text inline in any Android app with the user's own Gemini key, without giving up Gboard.</p>
-<div class="tldr io" id="tldr"><b>TL;DR:</b> Every app ships its own mediocre AI rewrite button. ToneShift puts one consistent rewriter, with your own key and your own style, inside every app at once.</div>
-<div class="meta io"><div><b>Role</b><span>Solo builder</span></div><div><b>Timeline</b><span>Nov 2026</span></div><div><b>Stack</b><span>Flutter &#183; Kotlin &#183; Gemini 2.5 Flash</span></div></div>
-<div class="metric io"><div><b>26</b><span>source files</span></div><div><b>CI</b><span>GitHub Actions release builds</span></div><div><b>2</b><span>hooks: popup and pill</span></div></div>
-<h2 id='context' class='io'>Context</h2><p class='io'>Rewriting a message means leaving the app, opening an AI tool, pasting, copying back. ToneShift removes the trip: select text in any app and choose Shorten, Formal, Grammar Fix, Bullet or Polite No.</p><h2 id='built' class='io'>What was built</h2><p class='io'>Two hooks: an ACTION_PROCESS_TEXT selection popup, and an AccessibilityService floating pill with Undo for everywhere else. The user's Gemini key lives in EncryptedSharedPreferences, never on a server. GitHub Actions builds and publishes a release APK on every push to main; build 5 is live.</p><h2 id='shows' class='io'>What it shows</h2><p class='io'>Native Android depth (accessibility services, text processing intents, encrypted storage) plus a fully automated release pipeline, built solo for personal use.</p>
-<h2 id="links" class="io">Keep reading</h2>
-<p class='io'><a class='sweep' href='https://github.com/swagat27/toneshift'>See the code and releases &#8594;</a></p><p class='io'><a class='sweep' href='/#work'>See other case studies &#8594;</a></p>
-</main>
-</div>
 
-<script>
-(function(){
-var lamp=document.getElementById('lamp');
-lamp.addEventListener('click',function(){document.body.classList.toggle('light');if(window.sbBlip)sbBlip(880)});
-window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%'});
-var links=document.querySelectorAll('.sidenav a[href^="#"]');
-var secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute('href'))});
-window.addEventListener('scroll',function(){var y=window.scrollY+140,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})});
-})();
-</script>
+<p class="reveal-load" style="--d:.05s;margin-top:56px"><a class="backlink sweep" href="/#work">&#8592; selected work</a></p>
+<h1 class="reveal-load" style="--d:.12s;margin-top:18px">ToneShift</h1>
+<p class="reveal-load" style="--d:.2s"><em>Android app</em></p>
+<p class="reveal-load" style="--d:.28s">ToneShift rewrites text inline in any Android app, using the user's own Gemini API key, without giving up Gboard. Select text and choose Shorten, Formal, Grammar Fix, Bullet or Polite No, or use the floating pill with Undo.</p>
+<div class="metric io"><div><b>26</b><span>source files</span></div><div><b>CI</b><span>GitHub Actions builds the APK</span></div><div><b>2</b><span>hooks: selection popup and floating pill</span></div></div>
+<h2 class='io'>Why it exists</h2><p class='io'>Every app now has its own AI rewrite button, all different, most mediocre. ToneShift puts one consistent rewriter, with the user's own key and style, inside every app at once.</p><h2 class='io'>How it is built</h2><p class='io'>Flutter plus Kotlin. An ACTION_PROCESS_TEXT hook for the selection popup and an AccessibilityService floating pill. Gemini 2.5 Flash does the rewriting; the key is stored in EncryptedSharedPreferences. Every push to main builds and publishes a release APK through GitHub Actions.</p>
+<p class='io'><a class='sweep' href='https://github.com/swagat27/toneshift'>See the code and releases</a></p>
+</main>
+<footer class="io">
+<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="/#work">(selected work)</a></nav>
+<nav aria-label="lets talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
+</footer>
+</div>
 <script src="/assets/app.js"></script>
 </body>
 </html>

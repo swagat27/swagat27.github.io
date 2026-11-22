@@ -32,105 +32,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css"></head>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
 <body>
-<div class="topbar">
-<a class="logo" href="/"><em>swagat</em> <b>baghel</b></a>
-<nav class="mainnav" aria-label="Main"><ul>
-<li><a href="/about.html">about<span class="tip">Who am I?</span></a></li>
-<li><a href="/#work">work<span class="tip">featured work</span></a></li>
-<li><a href="/playground.html">playground &#8599;<span class="tip">some experiments</span></a></li>
-</ul></nav>
-</div>
-<div class="hero">
-<div class="card">
-<div class="risk">the case studies are a long scroll, proceed at your own risk :)</div>
-<div style="height:26px"></div>
-<div class="toggle" role="group" aria-label="the what or the why">
-<button type="button" id="tWhat" class="on">the what</button>
-<button type="button" id="tWhy">the why</button>
-</div>
-<h1 class="name"><em>Swagat</em> <b>Baghel</b></h1>
-<p class="line">a <span class="hl">Business Functions Intern at Myntra</span> with a background in mechanical engineering.</p>
-<p class="line2">&#8212; who's curious about how things actually work, and how they could work better.</p>
-<div class="swap" id="swapWhat">
-<p>A final-year mechanical engineering student (IIT BHILAI '27) working on category analytics for Men's Apparel: assortment gaps, pricing, search tooling like SearchIQ, and account analytics for a portfolio of fashion brands. Before this, a Research Fellow at IIT Bombay, where my topology optimization work made 3D printed concrete structures 30% lighter. On my own time, I build AI products.</p>
-</div>
-<div class="swap" id="swapWhy" hidden>
-<p>I grew up in Odisha, in a small town most people have not heard of, and took the long way here: core engineering, a race car team, a research lab, and now a fashion company in Bengaluru. Since I was a kid, I have always been intrigued by one question: 'How does this actually work, and who decides?' That question stayed with me through an engineering degree, a research fellowship, and now, as I work in business and build products. I am still learning how to answer it. <span class="hl">I am Swagat</span>, an engineer learning business by doing it.</p>
-</div>
-<a class="pill" href="https://mail.google.com/mail/?view=cm&fs=1&to=swagatb@iitbhilai.ac.in&su=Redirected%20from%20your%20portfolio&body=Hi%20Swagat%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."><i></i>Open to full-time roles from May 2027. Say hi!</a>
-<div class="cardfoot"><span></span><span class="scrollcue">Featured Work &#8595;</span><span></span></div>
-</div>
-</div>
-<section class="work" id="work">
-<div class="dark">
-<h2><em>Featured</em> Work</h2>
-<div class="carousel" id="carousel"></div>
-<div class="cnav">
-<button type="button" id="cPrev">Previous</button>
-<div class="dots" id="cDots"></div>
-<button type="button" id="cNext">Next</button>
-</div>
-</div>
+<div class="wrap">
+<nav class="mainnav reveal" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="/" aria-current="page">home</a></li><li><a class="sweep" href="/about.html">about</a></li><li><a class="sweep" href="#work">work</a></li><li><a class="sweep" href="/playground.html">playground</a></li></ul></nav>
+<main id="top">
+<h1 class="reveal-load" style="--d:.1s">Swagat Baghel</h1>
+<p class="reveal-load" style="--d:.2s" id="about">A final-year mechanical engineering student (IIT BHILAI '27) and a Business Functions Intern at Myntra. I work on category analytics for Men's Apparel: assortment gaps, pricing, search tooling like SearchIQ, and account analytics for a portfolio of fashion brands. Before this, I was a Research Fellow at IIT Bombay, where my work on topology optimization made 3D printed concrete structures 30% lighter. On my own time, I build AI products.</p>
+<p class="reveal-load" style="--d:.3s">I grew up in Odisha, in a small town most people have not heard of, and took the long way here: core engineering, a race car team, a research lab, and now a fashion company in Bengaluru. The thread through all of it is a simple question I keep coming back to: <em>how does this actually work, and how could it work better?</em> It is why an engineer ended up studying how people shop, and why I film engineering student life on YouTube alongside everything else. I am Swagat, an engineer learning business by doing it.</p>
+<p class="reveal-load" style="--d:.4s">Open to full-time business, analytics and product roles from May 2027. <a class="sweep" href="https://mail.google.com/mail/?view=cm&fs=1&to=swagatb@iitbhilai.ac.in&su=Redirected%20from%20your%20portfolio&body=Hi%20Swagat%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.">Say hi</a></p>
+<section id="work">
+<h2 class="reveal-load" style="--d:.5s">Featured Work</h2>
+<ul>
+<li class="reveal-load" style="--d:.58s"><a class="sweep" href="/case-study/boxpilot.html">BoxPilot</a> <span class="note">(live AI product)</span></li>
+<li class="reveal-load" style="--d:.66s"><a class="sweep" href="/case-study/aapdasetu.html">AapdaSetu</a> <span class="note">(disaster early warning project)</span></li>
+<li class="reveal-load" style="--d:.74s"><a class="sweep" href="/case-study/toneshift.html">ToneShift</a> <span class="note">(Android app)</span></li>
+<li class="reveal-load" style="--d:.82s"><a class="sweep" href="/case-study/gsearch.html">GSearch</a> <span class="note">(interactive web app)</span></li>
+</ul>
 </section>
-<footer class="site io">
-<div class="giant">Swagat<br>Baghel</div>
-<div class="cols">
-<div>
-<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="/#work">(selected work)</a></nav>
-<nav aria-label="lets talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
-<p style="margin-top:16px;font-style:italic;color:var(--muted);font-size:15px">*built with Claude, code &amp; coffee</p>
-<p style="color:var(--muted);font-size:14px;margin-top:6px">&#169; 2026 Swagat Baghel. All rights reserved.</p>
-</div>
-<div class="stampbox">
-<img id="stampImg" src="https://avatars.githubusercontent.com/u/153976113?v=4" alt="Swagat Baghel">
-<div class="hint">(leave a mark) (click to stamp)</div>
-<div class="stampdots" id="stampDots"></div>
-<button class="linkbtn" id="newSheet" type="button">new sheet</button>
-</div>
-</div>
+</main>
+<footer class="reveal-load" style="--d:.95s">
+<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="#work">(selected work)</a></nav>
+<nav aria-label="let's talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
 </footer>
-<script>
-(function(){
-var stamps=['HELLO','HI!','HEY','NAMASTE','YO'],cur=0,box=document.querySelector('.stampbox'),dots=document.getElementById('stampDots');
-stamps.forEach(function(s,i){var d=document.createElement('i');if(i===0)d.className='on';d.title=s;dots.appendChild(d);d.addEventListener('click',function(){cur=i;dots.querySelectorAll('i').forEach(function(x,j){x.classList.toggle('on',j===i)})})});
-box.querySelector('img').addEventListener('click',function(e){var r=this.getBoundingClientRect(),s=document.createElement('div');s.className='stamp';s.textContent=stamps[cur];s.style.left=((e.clientX-r.left)-52)+'px';s.style.top=((e.clientY-r.top)-52)+'px';box.appendChild(s);if(window.sbBlip)sbBlip(300)});
-document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')cur=(cur+1)%stamps.length;if(e.key==='ArrowLeft')cur=(cur+stamps.length-1)%stamps.length;dots.querySelectorAll('i').forEach(function(x,j){x.classList.toggle('on',j===cur)})});
-document.getElementById('newSheet').addEventListener('click',function(){box.querySelectorAll('.stamp').forEach(function(s){s.remove()})});
-})();
-</script>
-<div class="seo io">
-<p><b>Experience:</b> Business Functions Intern, Myntra, Bengaluru (2026). Research Fellow, IIT Bombay (2025). Virtual Intern, Siemens (2026). UI/UX Intern, Noqs Digital, Star Intern (2024). Vice-Captain, Team Agnishul, SAE M-Baja, 50+ members. Chhattisgarh Chapter Lead, NYCC India. State Lead, YCIC (YuWaah-UNICEF). Rank 1, Naukri Campus Engineers' Ring of Honour, IIT BHILAI. Creator: YouTube @Swagat-IITBH, Instagram @swg4t, ORCID 0009-0001-7302-4623.</p>
-<p><b>Who is Swagat Baghel?</b> Swagat Baghel is a final-year B.Tech Mechanical Engineering student at IIT BHILAI and a Business Functions Intern at Myntra in Bengaluru. He is an AI product builder and Vice-Captain of Team Agnishul. Swagat Baghel is an IIT BHILAI engineering student and Myntra intern, not a medical professional, not a NEET mentor, and not a General Physician. <b>Where does he study?</b> IIT BHILAI, graduating May 2027. <b>What has he built?</b> BoxPilot, GSearch, ToneShift, CallToDeck, AutoForm and DisasterAI (AapdaSetu). <b>Contact:</b> swagatb@iitbhilai.ac.in.</p>
+<div class="seo">
+<p><b>Experience:</b> Business Functions Intern, Myntra, Bengaluru (2026). Research Fellow, IIT Bombay (2025). Virtual Intern, Siemens (2026). UI/UX Intern, Noqs Digital, Star Intern (2024). Vice-Captain, Team Agnishul, SAE M-Baja, 50+ members. Chhattisgarh Chapter Lead, NYCC India. State Lead, YCIC (YuWaah-UNICEF). Rank 1, Naukri Campus Engineers' Ring of Honour, IIT BHILAI. Creator: YouTube <a href="https://www.youtube.com/@Swagat-IITBH">@Swagat-IITBH</a>, Instagram <a href="https://www.instagram.com/swg4t">@swg4t</a>, <a href="https://orcid.org/0009-0001-7302-4623">ORCID</a>.</p>
+<p><b>Skills:</b> SQL, Trino, Python, Pandas, Claude and Gemini APIs, MCP, Flutter, SolidWorks, ANSYS, category management, pricing and assortment analytics.</p>
+<p><b>Who is Swagat Baghel?</b> Swagat Baghel is a final-year B.Tech Mechanical Engineering student at IIT BHILAI and a Business Functions Intern at Myntra in Bengaluru. He is an AI product builder and Vice-Captain of Team Agnishul. Swagat Baghel is an IIT BHILAI engineering student and Myntra intern, not a medical professional, not a NEET mentor, and not a General Physician.</p>
+<p><b>Where does Swagat Baghel study?</b> At IIT BHILAI, graduating May 2027. <b>Where does he work?</b> At Myntra, Bengaluru. <b>What has he built?</b> BoxPilot, GSearch, ToneShift, CallToDeck, AutoForm and DisasterAI (AapdaSetu). <b>How to contact him?</b> Email swagatb@iitbhilai.ac.in.</p>
+<p>Official website of Swagat Baghel: swagat27.github.io, Bengaluru, India.</p>
 </div>
-<div id="cursorPill">click</div>
-<script>
-(function(){
-var W=document.getElementById('tWhat'),Y=document.getElementById('tWhy'),sW=document.getElementById('swapWhat'),sY=document.getElementById('swapWhy');
-function setT(what){W.classList.toggle('on',what);Y.classList.toggle('on',!what);sW.hidden=!what;sY.hidden=what}
-W.addEventListener('click',function(){setT(true)});Y.addEventListener('click',function(){setT(false)});
-var data=[
-{n:'01',t:'BoxPilot',d:'An agentic planner that reads your Gmail and Calendar, then plans the day.',c:'#0d3b34',u:'/case-study/boxpilot.html'},
-{n:'02',t:'AapdaSetu',d:'Flood early warning for the districts that flood first.',c:'#5b2333',u:'/case-study/aapdasetu.html'},
-{n:'03',t:'ToneShift',d:'One AI rewriter, inside every Android app, with your own key.',c:'#191921',u:'/case-study/toneshift.html'},
-{n:'04',t:'GSearch',d:'One search across every scattered CAD library.',c:'#274156',u:'/case-study/gsearch.html'}];
-var car=document.getElementById('carousel'),dots=document.getElementById('cDots'),cur=0,timer=null,cards=[];
-data.forEach(function(d,i){var el=document.createElement('div');el.className='ccard';el.style.background=d.c;el.innerHTML='<div class="num">('+d.n+')</div><h3>'+d.t+'</h3><p>'+d.d+'</p>';el.addEventListener('click',function(){if(i===cur)location.href=d.u;else go(i)});car.appendChild(el);cards.push(el);
-var dt=document.createElement('i');if(i===0)dt.className='on';dt.addEventListener('click',function(){go(i)});dots.appendChild(dt)});
-function layout(){cards.forEach(function(el,i){var off=i-cur;el.style.transform='translateX('+(off*62)+'%) scale('+(off===0?1:.82))+'';el.style.transform='translateX('+(off*62)+'%) scale('+(off===0?1:.82)+') rotateY('+(off*-14)+'deg)';el.style.opacity=Math.abs(off)>1?0:(off===0?1:.55);el.style.zIndex=10-Math.abs(off);el.style.pointerEvents=Math.abs(off)>1?'none':'auto'});dots.querySelectorAll('i').forEach(function(x,j){x.classList.toggle('on',j===cur)})}
-function go(i){cur=(i+data.length)%data.length;layout();restart()}
-function restart(){clearInterval(timer);timer=setInterval(function(){cur=(cur+1)%data.length;layout()},20000)}
-document.getElementById('cPrev').addEventListener('click',function(){go(cur-1)});
-document.getElementById('cNext').addEventListener('click',function(){go(cur+1)});
-car.addEventListener('pointerenter',function(){clearInterval(timer)});
-car.addEventListener('pointerleave',restart);
-var pill=document.getElementById('cursorPill');
-car.addEventListener('pointermove',function(e){pill.style.left=e.clientX+'px';pill.style.top=e.clientY+'px';pill.style.opacity=1});
-car.addEventListener('pointerleave',function(){pill.style.opacity=0});
-layout();restart();
-})();
-</script>
+</div>
 <script src="/assets/app.js"></script>
 </body>
 </html>
