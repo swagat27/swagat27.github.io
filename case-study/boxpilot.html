@@ -3,32 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An inbox that plans itself | Swagat Baghel</title>
+<meta name="description" content="An inbox that plans itself: An agentic planner that connects AI agents to a real Gmail and Calendar, reads the day, and turns it into a plan. A case study by Swagat Baghel, IIT BHILAI.">
 <link rel="icon" href="https://avatars.githubusercontent.com/u/153976113?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
-<title>BoxPilot | Swagat Baghel</title>
-<meta name="description" content="BoxPilot: live AI product. A project by Swagat Baghel, IIT BHILAI.">
 </head>
-<body>
-<div class="wrap">
-<nav class="mainnav reveal-load" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="/">home</a></li><li><a class="sweep" href="/about.html">about</a></li><li><a class="sweep" href="/#work">work</a></li><li><a class="sweep" href="/playground.html">playground</a></li></ul></nav>
+<body class="casepage">
+<div id="progress"></div>
+<div id="lamp" title="pull to switch"><div class="cord"></div><div class="shade">&#128161;</div><div class="lbl">pull to switch</div></div>
+<div class="casewrap">
+<aside class="sidenav">
+<a class="back sweep" href="/#work">&#8592; Back</a>
+<div style="font-family:'Pixelify Sans',monospace;font-size:12.5px;letter-spacing:1.5px;opacity:.55;margin-bottom:8px">ON THIS PAGE</div>
+<a href='#tldr'>TL;DR</a><a href='#context'>Context</a><a href='#built'>What was built</a><a href='#shows'>What it shows</a><a href='#links'>Links</a>
+</aside>
 <main>
-
-<p class="reveal-load" style="--d:.05s;margin-top:56px"><a class="backlink sweep" href="/#work">&#8592; selected work</a></p>
-<h1 class="reveal-load" style="--d:.12s;margin-top:18px">BoxPilot</h1>
-<p class="reveal-load" style="--d:.2s"><em>live AI product</em></p>
-<p class="reveal-load" style="--d:.28s">BoxPilot is an agentic planner that connects AI agents to a real inbox and calendar, reads the day, and turns it into a plan. It is Swagat's flagship AI product, built solo in February 2026 and running live on GitHub Pages.</p>
-<div class="metric io"><div><b>18 / 18</b><span>tests passing</span></div><div><b>Live</b><span>on GitHub Pages</span></div><div><b>3</b><span>AI systems: Claude, Gemini, MCP</span></div></div>
-<h2 class='io'>The problem</h2><p class='io'>Email and calendars hold the plan already, but nobody has time to assemble it every morning. The information exists; the synthesis does not.</p><h2 class='io'>What was built</h2><p class='io'>Agents built on the Claude API and MCP, with Gemini in the loop, read Gmail and Calendar, extract commitments, and assemble a prioritised day plan. The rebuild in November 2026 professionalised the repo, tests and demo.</p><h2 class='io'>What it shows</h2><p class='io'>End-to-end ownership: problem framing, agent architecture, API integration, testing and a public live demo.</p>
-<p class='io'><a class='sweep' href='https://swagat27.github.io/boxpilot/'>Open the live demo</a></p><p class='io'><a class='sweep' href='https://github.com/swagat27/boxpilot'>See the code on GitHub</a></p>
+<p class="kicker reveal-load" style="--d:.05s">AI PRODUCT &#183; BUILT SOLO, FEB 2026</p>
+<h1 class="reveal-load" style="--d:.12s">An inbox that plans itself</h1>
+<p class="sub reveal-load" style="--d:.2s">An agentic planner that connects AI agents to a real Gmail and Calendar, reads the day, and turns it into a plan.</p>
+<div class="tldr io" id="tldr"><b>TL;DR:</b> Email and calendars already hold the plan. Nobody has time to assemble it every morning. BoxPilot's agents do the assembly: commitments in, a prioritised day out.</div>
+<div class="meta io"><div><b>Role</b><span>Solo builder</span></div><div><b>Timeline</b><span>Feb 2026, rebuilt Nov 2026</span></div><div><b>Tools</b><span>Claude API &#183; MCP &#183; Gemini API &#183; Gmail &#183; Calendar</span></div></div>
+<div class="metric io"><div><b>18 / 18</b><span>tests passing</span></div><div><b>Live</b><span>demo on GitHub Pages</span></div><div><b>3</b><span>AI systems in one loop</span></div></div>
+<h2 id='context' class='io'>Context</h2><p class='io'>Every morning starts with the same archaeology: dig through an inbox and a calendar, hold ten commitments in your head, and guess what matters most. The information exists. The synthesis does not.</p><h2 id='built' class='io'>What was built</h2><p class='io'>Agents built on the Claude API and MCP, with Gemini in the loop, read Gmail and Calendar, extract commitments and deadlines, and assemble a prioritised plan for the day. In November 2026 the project was rebuilt professionally: a clean public repo, a test suite at 18 of 18 passing, and a live demo on GitHub Pages.</p><h2 id='shows' class='io'>What it shows</h2><p class='io'>End-to-end ownership of an AI product: problem framing, agent architecture, API integration, testing, and shipping a public demo that anyone can open.</p>
+<h2 id="links" class="io">Keep reading</h2>
+<p class='io'><a class='sweep' href='https://swagat27.github.io/boxpilot/'>Open the live demo &#8594;</a></p><p class='io'><a class='sweep' href='https://github.com/swagat27/boxpilot'>See the code on GitHub &#8594;</a></p><p class='io'><a class='sweep' href='/#work'>See other case studies &#8594;</a></p>
 </main>
-<footer class="io">
-<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="/#work">(selected work)</a></nav>
-<nav aria-label="lets talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
-</footer>
 </div>
+
+<script>
+(function(){
+var lamp=document.getElementById('lamp');
+lamp.addEventListener('click',function(){document.body.classList.toggle('light');if(window.sbBlip)sbBlip(880)});
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%'});
+var links=document.querySelectorAll('.sidenav a[href^="#"]');
+var secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute('href'))});
+window.addEventListener('scroll',function(){var y=window.scrollY+140,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})});
+})();
+</script>
 <script src="/assets/app.js"></script>
 </body>
 </html>
