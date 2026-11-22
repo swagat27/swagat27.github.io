@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/153976113?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<title>ToneShift | Swagat Baghel</title>
+<meta name="description" content="ToneShift: Android app. A project by Swagat Baghel, IIT BHILAI.">
+</head>
+<body>
+<div class="wrap">
+<nav class="mainnav reveal-load" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="/">home</a></li><li><a class="sweep" href="/about.html">about</a></li><li><a class="sweep" href="/#work">work</a></li><li><a class="sweep" href="/playground.html">playground</a></li></ul></nav>
+<main>
+
+<p class="reveal-load" style="--d:.05s;margin-top:56px"><a class="backlink sweep" href="/#work">&#8592; selected work</a></p>
+<h1 class="reveal-load" style="--d:.12s;margin-top:18px">ToneShift</h1>
+<p class="reveal-load" style="--d:.2s"><em>Android app</em></p>
+<p class="reveal-load" style="--d:.28s">ToneShift rewrites text inline in any Android app, using the user's own Gemini API key, without giving up Gboard. Select text and choose Shorten, Formal, Grammar Fix, Bullet or Polite No, or use the floating pill with Undo.</p>
+<div class="metric io"><div><b>26</b><span>source files</span></div><div><b>CI</b><span>GitHub Actions builds the APK</span></div><div><b>2</b><span>hooks: selection popup and floating pill</span></div></div>
+<h2 class='io'>Why it exists</h2><p class='io'>Every app now has its own AI rewrite button, all different, most mediocre. ToneShift puts one consistent rewriter, with the user's own key and style, inside every app at once.</p><h2 class='io'>How it is built</h2><p class='io'>Flutter plus Kotlin. An ACTION_PROCESS_TEXT hook for the selection popup and an AccessibilityService floating pill. Gemini 2.5 Flash does the rewriting; the key is stored in EncryptedSharedPreferences. Every push to main builds and publishes a release APK through GitHub Actions.</p>
+<p class='io'><a class='sweep' href='https://github.com/swagat27/toneshift'>See the code and releases</a></p>
+</main>
+<footer class="io">
+<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="/#work">(selected work)</a></nav>
+<nav aria-label="lets talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
+</footer>
+</div>
+<script src="/assets/app.js"></script>
+</body>
+</html>

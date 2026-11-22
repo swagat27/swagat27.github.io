@@ -32,58 +32,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#e3dccc;--ink:#121212;--brand:#d9ce6a;--muted:rgba(18,18,18,.55);--ease:cubic-bezier(.16,1,.3,1)}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased;background-image:linear-gradient(rgba(18,18,18,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(18,18,18,.045) 1px,transparent 1px);background-size:40px 40px}
-::selection{background:var(--brand);color:var(--ink)}
-.wrap{max-width:880px;margin:0 auto;padding:44px 6vw 70px}
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-.reveal{opacity:0;animation:fadeUp .85s var(--ease) forwards;animation-delay:var(--d,0s)}
-nav.mainnav ul{list-style:none;display:flex;gap:28px}
-nav.mainnav a{font-size:16px;font-weight:500}
-a{color:var(--ink);text-decoration:none}
-.sweep{position:relative;display:inline-block;padding:0 5px;z-index:0}
-.sweep::before{content:"";position:absolute;inset:0;background:var(--brand);transform:scaleX(0);transform-origin:left center;transition:transform .45s var(--ease);z-index:-1}
-.sweep:hover::before,.sweep:focus-visible::before{transform:scaleX(1)}
-h1{font-family:Fraunces,Georgia,serif;font-size:clamp(38px,5.5vw,56px);font-weight:560;letter-spacing:-.5px;margin:64px 0 26px}
-h2{font-family:Fraunces,Georgia,serif;font-size:26px;font-weight:560;margin:52px 0 16px}
-p{margin-bottom:22px;max-width:720px}
-p em{font-family:Fraunces,Georgia,serif}
-section#work ul{list-style:none}
-section#work li{margin-bottom:12px;font-size:19px}
-section#work .note{color:var(--muted)}
-footer{margin-top:72px;font-size:16px}
-footer .flabel{color:var(--muted);margin-right:8px}
-footer nav{margin-bottom:10px}
-footer .px{font-family:"Pixelify Sans",monospace;font-size:17px}
-.seo{margin-top:64px;border-top:1px solid rgba(18,18,18,.18);padding-top:28px;font-size:14.5px;line-height:1.7;color:rgba(18,18,18,.72);max-width:720px}
-.seo b{color:var(--ink)}
-.seo p{margin-bottom:12px;font-size:14.5px}
-.seo a{text-decoration:underline;text-underline-offset:3px}
-@media (prefers-reduced-motion: reduce){.reveal{opacity:1;animation:none}.sweep::before{transition:none}}
-</style>
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 <div class="wrap">
-<nav class="mainnav reveal" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="#top">home</a></li><li><a class="sweep" href="#about">about</a></li><li><a class="sweep" href="#work">work</a></li><li><a class="sweep" href="https://github.com/swagat27">playground</a></li></ul></nav>
+<nav class="mainnav reveal" style="--d:.02s" aria-label="Main"><ul><li><a class="sweep" href="/" aria-current="page">home</a></li><li><a class="sweep" href="/about.html">about</a></li><li><a class="sweep" href="#work">work</a></li><li><a class="sweep" href="/playground.html">playground</a></li></ul></nav>
 <main id="top">
-<h1 class="reveal" style="--d:.1s">Swagat Baghel</h1>
-<p class="reveal" style="--d:.2s" id="about">A final-year mechanical engineering student (IIT BHILAI '27) and a Business Functions Intern at Myntra. I work on category analytics for Men's Apparel: assortment gaps, pricing, search tooling like SearchIQ, and account analytics for a portfolio of fashion brands. Before this, I was a Research Fellow at IIT Bombay, where my work on topology optimization made 3D printed concrete structures 30% lighter. On my own time, I build AI products.</p>
-<p class="reveal" style="--d:.3s">I grew up in Odisha, in a small town most people have not heard of, and took the long way here: core engineering, a race car team, a research lab, and now a fashion company in Bengaluru. The thread through all of it is a simple question I keep coming back to: <em>how does this actually work, and how could it work better?</em> It is why an engineer ended up studying how people shop, and why I film engineering student life on YouTube alongside everything else. I am Swagat, an engineer learning business by doing it.</p>
-<p class="reveal" style="--d:.4s">Open to full-time business, analytics and product roles from May 2027. <a class="sweep" href="https://mail.google.com/mail/?view=cm&fs=1&to=swagatb@iitbhilai.ac.in&su=Redirected%20from%20your%20portfolio&body=Hi%20Swagat%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.">Say hi</a></p>
+<h1 class="reveal-load" style="--d:.1s">Swagat Baghel</h1>
+<p class="reveal-load" style="--d:.2s" id="about">A final-year mechanical engineering student (IIT BHILAI '27) and a Business Functions Intern at Myntra. I work on category analytics for Men's Apparel: assortment gaps, pricing, search tooling like SearchIQ, and account analytics for a portfolio of fashion brands. Before this, I was a Research Fellow at IIT Bombay, where my work on topology optimization made 3D printed concrete structures 30% lighter. On my own time, I build AI products.</p>
+<p class="reveal-load" style="--d:.3s">I grew up in Odisha, in a small town most people have not heard of, and took the long way here: core engineering, a race car team, a research lab, and now a fashion company in Bengaluru. The thread through all of it is a simple question I keep coming back to: <em>how does this actually work, and how could it work better?</em> It is why an engineer ended up studying how people shop, and why I film engineering student life on YouTube alongside everything else. I am Swagat, an engineer learning business by doing it.</p>
+<p class="reveal-load" style="--d:.4s">Open to full-time business, analytics and product roles from May 2027. <a class="sweep" href="https://mail.google.com/mail/?view=cm&fs=1&to=swagatb@iitbhilai.ac.in&su=Redirected%20from%20your%20portfolio&body=Hi%20Swagat%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.">Say hi</a></p>
 <section id="work">
-<h2 class="reveal" style="--d:.5s">Featured Work</h2>
+<h2 class="reveal-load" style="--d:.5s">Featured Work</h2>
 <ul>
-<li class="reveal" style="--d:.58s"><a class="sweep" href="https://swagat27.github.io/boxpilot/">BoxPilot</a> <span class="note">(live AI product)</span></li>
-<li class="reveal" style="--d:.66s"><a class="sweep" href="#work">AapdaSetu</a> <span class="note">(disaster early warning project)</span></li>
-<li class="reveal" style="--d:.74s"><a class="sweep" href="https://github.com/swagat27/toneshift">ToneShift</a> <span class="note">(Android app)</span></li>
-<li class="reveal" style="--d:.82s"><a class="sweep" href="#work">GSearch</a> <span class="note">(interactive web app)</span></li>
+<li class="reveal-load" style="--d:.58s"><a class="sweep" href="/case-study/boxpilot.html">BoxPilot</a> <span class="note">(live AI product)</span></li>
+<li class="reveal-load" style="--d:.66s"><a class="sweep" href="/case-study/aapdasetu.html">AapdaSetu</a> <span class="note">(disaster early warning project)</span></li>
+<li class="reveal-load" style="--d:.74s"><a class="sweep" href="/case-study/toneshift.html">ToneShift</a> <span class="note">(Android app)</span></li>
+<li class="reveal-load" style="--d:.82s"><a class="sweep" href="/case-study/gsearch.html">GSearch</a> <span class="note">(interactive web app)</span></li>
 </ul>
 </section>
 </main>
-<footer class="reveal" style="--d:.95s">
-<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="#top">(home)</a> <a class="sweep px" href="https://github.com/swagat27">(playground)</a> <a class="sweep px" href="#work">(selected work)</a></nav>
+<footer class="reveal-load" style="--d:.95s">
+<nav aria-label="navigate"><span class="flabel">navigate</span> <a class="sweep px" href="/">(home)</a> <a class="sweep px" href="/playground.html">(playground)</a> <a class="sweep px" href="#work">(selected work)</a></nav>
 <nav aria-label="let's talk"><span class="flabel">let's talk</span> <a class="sweep px" href="https://www.linkedin.com/in/swagat-baghel">(linkedin)</a> <a class="sweep px" href="mailto:swagatb@iitbhilai.ac.in">(mail)</a> <a class="sweep px" href="https://github.com/swagat27">(github)</a></nav>
 </footer>
 <div class="seo">
@@ -94,5 +64,6 @@ footer .px{font-family:"Pixelify Sans",monospace;font-size:17px}
 <p>Official website of Swagat Baghel: swagat27.github.io, Bengaluru, India.</p>
 </div>
 </div>
+<script src="/assets/app.js"></script>
 </body>
 </html>
