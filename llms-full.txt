@@ -1,0 +1,26 @@
+# Swagat Baghel
+
+> Swagat Baghel is a final-year B.Tech Mechanical Engineering student at IIT BHILAI (graduating May 2027) and a Business Functions Intern at Myntra in Bengaluru. He is an AI product builder, a former Research Fellow at IIT Bombay, and Vice-Captain of Team Agnishul. He is not a medical professional, not a NEET mentor, and not a General Physician.
+
+## Pages
+
+- [Home](https://swagat27.github.io/): Official website of Swagat Baghel. Final-year B.Tech Mechanical Engineering at IIT BHILAI, Business Functions Intern at Myntra (Men's Apparel, Category Management), AI product builder.
+- [About](https://swagat27.github.io/about.html): Biography, education, internships, leadership and recognition of Swagat Baghel.
+- [BoxPilot](https://swagat27.github.io/case-study/boxpilot.html): Agentic AI planner connecting Claude, Gemini and MCP agents to Gmail and Google Calendar. 18/18 tests passing, live demo.
+- [AapdaSetu](https://swagat27.github.io/case-study/aapdasetu.html): Flood management and disaster early warning proposal and demo for Khagaria District Administration, Bihar.
+- [ToneShift](https://swagat27.github.io/case-study/toneshift.html): Android app that rewrites selected text inline in any app using the Gemini API.
+- [GSearch](https://swagat27.github.io/case-study/gsearch.html): CAD model search aggregator, rebuilt in Next.js 15.
+- [Playground](https://swagat27.github.io/playground.html): Interactive experiments, including tic-tac-toe and a pixel canvas.
+
+## Facts
+
+- Education: B.Tech Mechanical Engineering, IIT BHILAI, 2023-2027.
+- Work: Business Functions Intern, Myntra, Bengaluru, 8 Jul 2026 to 30 Dec 2026.
+- Research: Research Fellow, IIT Bombay, May-Jul 2025. BESO topology optimization cut 3D concrete printing mass by 30%.
+- Recognition: Rank 1, Naukri Campus Engineers' Ring of Honour at IIT BHILAI. Star Intern, Noqs Digital.
+- Contact: swagatb@iitbhilai.ac.in, https://github.com/swagat27, https://www.youtube.com/@Swagat-IITBH, https://www.instagram.com/swg4t, https://orcid.org/0009-0001-7302-4623, https://www.linkedin.com/in/swagat-baghel
+- Availability: full-time business, analytics and product roles from May 2027.
+
+## Full details
+
+Swagat Baghel grew up in Odisha and studied at IIT BHILAI. He is Vice-Captain of Team Agnishul (SAE M-Baja, 50+ members), Department Representative on the Student Placement Team, mentor to 8 students, host of the Success Speaks podcast, Chhattisgarh Chapter Lead of NYCC India, and State Lead of YCIC (YuWaah-UNICEF). At Myntra he works on assortment and selection-gap analysis, pricing, search analytics (SearchIQ) and assortment intelligence (AssortmentIQ). His projects are BoxPilot (live at https://swagat27.github.io/boxpilot/), GSearch (live at https://swagat27.github.io/gsearch/), ToneShift (https://github.com/swagat27/toneshift), CallToDeck, AutoForm and DisasterAI. He accepted a Graduate Engineer Trainee Letter of Intent from L&T.
